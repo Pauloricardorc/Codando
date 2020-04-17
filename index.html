@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600&family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/Animate.css">
     <link rel="stylesheet" href="style/style.css" />
     <title>Document</title>
 </head>
@@ -13,19 +14,19 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
         <a class="navbar-brand" href="#">DEFAULT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse header-link" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+            <div class="navbar-nav">
             <a class="nav-item nav-link texto-link active" href="#">Inicio</a>
-            <a class="nav-item nav-link texto-link" href="#">Conteúdo</a>
-            <a class="nav-item nav-link texto-link" href="#">Contato</a>
-          </div>
+            <a class="nav-item nav-link texto-link" href="Error/index.html">Conteúdo</a>
+            <a class="nav-item nav-link texto-link" href="Error/index.html">Contato</a>
+            </div>
         </div>
     </nav>
     <div class="col-md-12 form-row container-principal">
         <div class="col-md-6">
-            <div class="container-icons">
+            <div class="container-icons animated flipInX delay-1s">
                 <img src="image/tec.png" class="imagem-ico" data-toggle="collapse" data-target="#Dicas">
                 <img src="image/tec2.png" class="imagem-ico" data-toggle="collapse" data-target="#Formas">
                 <img src="image/tec3.jpg" class="imagem-ico" data-toggle="collapse" data-target="#Viver">
@@ -47,11 +48,47 @@
             </div>
         </div>
         <div class="col-md-6 text-center container-img-lateral">
-            <img class="lateral-image" src="image/informacao.gif" alt="">
-        </div>   
+            <img class="lateral-image animated bounceInRight delay-0.5s" src="image/informacao.gif" alt="">
+        </div> 
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>  
     </div>
-    <div class="col-md-12 form-row container-second">
-        
+    <div class="container-secord">
+        <div class="animacao-nuvem">
+            <img src="image/nuvem-infor.png" alt="">
+        </div>
+        <div class="col-mb-12 ContainerCoteudo row">
+            <div class="card text-dark bg-light mb-4 info-card" style="max-width: 25rem; padding: 0;">
+                <div class="card-header header-cont">Proteção da rede e da navegação na Internet</div>
+                <div class="card-body body-contum invisible">
+                  <h5 class="card-title">Segurança de Rede</h5>
+                  <p class="card-text">Para manter a rede da empresa protegida é fundamental a utilização de um Firewall, com regras e bloqueios adequadamente configurados e atualizados.</p>
+                </div>
+                <div class="container-button">
+                    <button onclick="Mostrar1()" class="btn btn-info w-100">Sobre</button>
+                </div>
+            </div>
+            <div class="card text-dark bg-light mb-4 info-card" style="max-width: 25rem; padding: 0;">
+                <div class="card-header">Manutenção e atualização constante de sistemas</div>
+                <div class="card-body body-contdois invisible">
+                  <h5 class="card-title">Segurança do Sistema</h5>
+                  <p class="card-text">As formas de ataque mudam e evoluem constantemente, geralmente explorando vulnerabilidades de sistemas e servidores de rede ou a falta de conhecimentos e curiosidade dos usuários.</p>
+                </div>
+                <div class="container-button">
+                    <button onclick="Mostrar2()" class="btn btn-info w-100">Sobre</button>
+                </div>
+            </div>
+            <div class="card text-dark bg-light mb-4 info-card" style="max-width: 25rem; padding: 0;">
+                <div class="card-header">Cópias de segurança</div>
+                <div class="card-body body-conttres invisible">
+                  <h5 class="card-title">Segurança Dados</h5>
+                  <p class="card-text">O tão conhecido backup — ou cópia de segurança — é um mecanismo fundamental para garantir a disponibilidade da informação, caso as bases onde a informação esteja armazenada sejam danificadas ou roubadas.</p>
+                </div>
+                <div class="container-button">
+                    <button onclick="Mostrar3()" class="btn btn-info w-100">Sobre</button>
+                </div>
+            </div>
+        </div>
     </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
